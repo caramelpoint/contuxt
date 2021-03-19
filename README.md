@@ -1,4 +1,4 @@
-# Contux
+# Contuxt
 
 > Comprehensive context tool
 
@@ -27,4 +27,4 @@ class Example extends Component {
 
 ## License
 
-MIT © [NiicooR](https://github.com/NiicooR)
+MIT © [Caramel Point](https://github.com/caramelpoint)
