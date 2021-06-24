@@ -26,7 +26,16 @@ const IncrementIfOddButton = () => {
 }
 const IncrementAsync = () => {
   const dispatch = useCounterDispatch()
-  return <button onClick={() => dispatch(incrementAsync())}>+(Async)</button>
+  return (
+    <button
+      onClick={() => {
+        debugger
+        dispatch(incrementAsync())
+      }}
+    >
+      +(Async)
+    </button>
+  )
 }
 const IncrementByTwo = () => {
   const dispatch = useCounterDispatch()

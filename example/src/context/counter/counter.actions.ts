@@ -26,10 +26,14 @@ export const incrementIfOdd = () => (
 export const incrementAsync = () => async (
   dispatch: CustomDispatch<CounterActionTypes, CounterStore>
 ) => {
+  debugger
   dispatch(increment())
-  await setTimeout(() => {
-    dispatch(increment())
-  }, 2000)
+  debugger
+  dispatch(increment())
+  debugger
+  // await setTimeout(() => {
+  //   dispatch(increment())
+  // }, 20000)
 }
 
 export const incrementByValue = (
