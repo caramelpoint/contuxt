@@ -2,12 +2,14 @@ import {
   CounterActionTypes,
   DECREMENT,
   INCREMENT,
-  INCREMENT_BY_VALUE
+  INCREMENT_BY_VALUE,
+  SET_RESPONSE
 } from './counter.actions.types'
 import { CounterStore } from './counter.reducer.types'
 
 export const initialCounterStore: CounterStore = {
-  counter: 0
+  counter: 0,
+  response: ''
 }
 
 export const counterReducer = (
@@ -29,6 +31,11 @@ export const counterReducer = (
       return {
         ...state,
         counter: state.counter + action.payload
+      }
+    case SET_RESPONSE:
+      return {
+        ...state,
+        response: action.payload
       }
     default: {
       throw new Error(`Unhandled action type: ${action}`)
